@@ -1,0 +1,14 @@
+
+#include "ft.h"
+
+int	priori(char c)
+{
+  int pcounter;
+
+  pcounter = 0;
+  if (c == '*' || c == '/' || c == '%')
+    pcounter = 2;
+  if (c == '+' || c == '-')
+    pcounter = 1;
+  return (pcounter);
+}
